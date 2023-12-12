@@ -1,12 +1,15 @@
 {
   "name": "@guiexpert/angular-table",
-  "version": "14.0.0",
+  "version": "14.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
+  },
+  "repository": {
+    "url": "https://github.com/guiexperttable/angluar-14-table"
   },
   "private": true,
   "dependencies": {
