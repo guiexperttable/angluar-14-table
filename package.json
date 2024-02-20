@@ -1,6 +1,6 @@
 {
   "name": "@guiexpert/angular-table",
-  "version": "14.0.7",
+  "version": "14.0.9",
   "scripts": {
     "inst": "pnpm install -f",
     "ng": "ng",
@@ -13,7 +13,7 @@
   "repository": {
     "url": "https://github.com/guiexperttable/angluar-14-table"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^14.3.0",
     "@angular/common": "^14.3.0",
@@ -23,7 +23,7 @@
     "@angular/platform-browser": "^14.3.0",
     "@angular/platform-browser-dynamic": "^14.3.0",
     "@angular/router": "^14.3.0",
-    "@guiexpert/table": "^1.1.18",
+    "@guiexpert/table": "^1.1.27",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
