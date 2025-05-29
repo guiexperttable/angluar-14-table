@@ -1,6 +1,6 @@
 {
   "name": "@guiexpert/angular-table",
-  "version": "14.1.51",
+  "version": "14.1.53",
   "scripts": {
     "inst": "pnpm install -f",
     "ng": "ng",
@@ -8,9 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "npm-update-table": "pnpm update @guiexpert/table",
-    "npm-pub": "npm publish"
-
+    "npm-update-table": "pnpm update @guiexpert/table"
   },
   "repository": {
     "url": "https://github.com/guiexperttable/angluar-14-table"
