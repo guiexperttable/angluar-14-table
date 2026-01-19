@@ -10,7 +10,6 @@ This is the UI-agnostic table component for your next web app. 😊
 
 ### Version compatibility
 
-
 | Angular | @guiexpert/angular-table |
 |:--------|:-------------------------|
 | 21.x.x  | ^21.0.0                  |
