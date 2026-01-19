@@ -35,3 +35,4 @@ jobs:
         run: pnpm publish dist/angular-table --no-git-checks --access public --registry https://registry.npmjs.org/ --tag a14
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPN_TOKEN}}
+
