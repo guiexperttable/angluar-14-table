@@ -14,7 +14,7 @@ import { CommonModule } from "@angular/common";
 import { debounceTime, Subject, takeWhile } from "rxjs";
 import {
   EventListenerIf, FocusModelIf,
-  GeModelChangeEvent,
+  GeModelChangeEvent, GeScrollEvent,
   GeMouseEvent, SelectionModelIf,
   TableApi,
   TableModelIf,
@@ -23,6 +23,8 @@ import {
   TableScope
 } from '@guiexpert/table';
 import { DomService } from "./service/dom-service";
+
+
 
 
 @Component({
@@ -41,6 +43,9 @@ export class TableComponent implements OnInit, OnDestroy, EventListenerIf {
 
   @Output()
   tableReady = new Subject<TableApi>();
+
+  @Output()
+  scroll: Subject<GeScrollEvent> = new Subject<GeScrollEvent>();
 
   @Output()
   mouseMoved: Subject<GeMouseEvent> = new Subject<GeMouseEvent>();
@@ -68,6 +73,7 @@ export class TableComponent implements OnInit, OnDestroy, EventListenerIf {
 
   @Output()
   checkboxChanged: Subject<any[]> = new Subject<any[]>();
+
 
   @Input()
   tableModel?: TableModelIf;
@@ -109,6 +115,10 @@ export class TableComponent implements OnInit, OnDestroy, EventListenerIf {
 
   onMouseMoved(evt: GeMouseEvent): void {
     this.mouseMoved.next(evt);
+  }
+
+  onScroll(evt: GeScrollEvent): void {
+    this.scroll.next(evt);
   }
 
   // will be called by table-scope:
